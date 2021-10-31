@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+a{
+  color: rgba(255, 255, 255, 0.685);
+  text-decoration: none;
+}
+
+header{
+  background-color: rgb(52, 52, 63);
+  padding:3%;
+}
+header nav{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+header .nav-list{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  color: rgba(255, 255, 255, 0.685) !important;
+  list-style: none;
+}
+.nav-list a{
+  
+  font-size: 22px;
+}
+header h3{
+  color: rgba(255, 255, 255, 0.685) !important;
+  font-size: 26px;
+}
+.container{
+  padding-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.add-form{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.add-form div{
+  width: 30%;
+  margin: 1% auto;
+}
+.add-form input{
+  width: 100%;
+  padding:1%
+}
+.add-form label{
+  width: 100%;
+  font-weight: bolder;
+  font-size:16px
+}
+.add-form button{
+  color: rgba(255, 255, 255, 0.685);
+  background-color: rgb(52, 52, 63);
+  padding:3%;
+  font-weight: bolder;
+  font-size:14px;
+  border-radius:8px
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-direction:row;
+  width: 40%;
+  padding: 3%;
+  padding-bottom: 0%;
+}
+.row button{
+  padding: 1%;
+  width: 55%;
+}
