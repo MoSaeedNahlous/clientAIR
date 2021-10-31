@@ -15,7 +15,7 @@ const AddQuestion = () => {
 
     const addQuestionHandler = async(e)=> {
         e.preventDefault();
-        await axios.post('http://localhost:5000/api/questions',QuestionSt)
+        await axios.post('https://air-svu.herokuapp.com/api/questions',QuestionSt)
         setQuestionSt({
         question: '',
         answer: ''

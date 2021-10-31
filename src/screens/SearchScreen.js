@@ -12,7 +12,7 @@ const SearchScreen = () => {
     const searchHandler = async(e) => {
         e.preventDefault()
         const modifiedQuery = state.searchQuery.split(' ').join('-')
-        const { data } = await axios.get(`http://localhost:5000/api/questions/search/${modifiedQuery}`)
+        const { data } = await axios.get(`https://air-svu.herokuapp.com/api/questions/search/${modifiedQuery}`)
         setstate({...state, results:data})
     }
     

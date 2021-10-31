@@ -12,7 +12,7 @@ const ExtendedSearchScreen = () => {
     const searchHandler = async(e) => {
         e.preventDefault()
         const modifiedQuery = state.searchQuery.split(' ').join('-')
-        const { data } = await axios.get(`http://localhost:5000/api/questions/search/extended/${modifiedQuery}`)
+        const { data } = await axios.get(`https://air-svu.herokuapp.com/api/questions/search/extended/${modifiedQuery}`)
         setstate({...state, PerfectMatchResults:data.perfectMatch,goodMatchResults:data.goodMatch})
     }
     

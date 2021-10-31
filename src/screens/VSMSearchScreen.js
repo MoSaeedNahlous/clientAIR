@@ -12,7 +12,7 @@ const VSMSearchScreen = () => {
 
     const searchHandler = async(e) => {
         e.preventDefault()
-        const { data } = await axios.get(`http://localhost:5000/api/questions/search/vsm/${state.searchQuery}`)
+        const { data } = await axios.get(`https://air-svu.herokuapp.com/api/questions/search/vsm/${state.searchQuery}`)
         var qWords = []
         state.searchQuery.split(';').map(sec => 
             qWords.push(sec.split(':')[0])
